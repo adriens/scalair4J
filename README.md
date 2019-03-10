@@ -1,2 +1,16 @@
 # scalair4J
-SDK Java pour Scal-Air
+
+SDK Java pour Scal-Air.
+
+# Récupération des données estimés live du jour :
+
+Pour récupérer les données que l'on retrouve en pemier sur la
+[page de ScalAir](http://www.scalair.nc/) :
+
+```java
+StationCrawler crawler = new StationCrawler();
+Station aStation = crawler.getStationsStatuses().get(Station.NOM_STATION_ANSE_VATA);
+System.out.println("#########################################");
+System.out.println(aStation);
+System.out.println("#########################################");
+```
