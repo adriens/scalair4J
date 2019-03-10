@@ -2,6 +2,9 @@
 
 SDK Java pour Scal-Air pour interagir simplement avec ces données.
 
+***Pour l'instant seules les données live sont disponibles, 
+c'était la priorité.***
+
 # Récupération des données estimés live du jour :
 
 Pour récupérer les données que l'on retrouve en pemier sur la
