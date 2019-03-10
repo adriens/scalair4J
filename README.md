@@ -12,6 +12,8 @@ Pour récupérer les données que l'on retrouve en pemier sur la
 
 ![Screenshot](./Screenshot.png)
 
+# Usage
+
 ```java
 StationCrawler crawler = new StationCrawler();
 Station aStation = crawler.getStationsStatuses().get(Station.NOM_STATION_ANSE_VATA);
