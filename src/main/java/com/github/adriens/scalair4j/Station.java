@@ -14,8 +14,9 @@ public class Station {
     private StationLieu lieu;
     
     private String nom;
-    private int positionHtml;
     private IGA iga;
+    
+    private int id;
     
     
     public final static String NOM_STATION_FAUBOURG_BLANCHOT = "Faubourg Blanchot";
@@ -23,6 +24,12 @@ public class Station {
     public final static String NOM_STATION_MONTRAVEL = "Montravel";
     public final static String NOM_STATION_ANSE_VATA = "Anse Vata";
     public final static String NOM_STATION_GENERAL = "Général";
+    
+    public final static int ID_STATION_FAUBOURG_BLANCHOT = 98003;
+    public final static int ID_STATION_LOGICOOP = 98001;
+    public final static int ID_STATION_MONTRAVEL = 98002;
+    public final static int ID_STATION_ANSE_VATA = 98004;
+    public final static int ID_STATION_GENERAL = 0;// pas une vraie station
     
     
     public Station(){
@@ -36,7 +43,8 @@ public class Station {
         out += "Coleur : <" + getIga().getColor() + ">\n";
         out += "IGA : <" + getIga().getIndice() + ">\n";
         out += "Message : <" + getIga().getMessage() + ">\n";
-        out += "Typologie : <" + getTypologie() + ">";
+        out += "Typologie : <" + getTypologie() + ">\n";
+        out += "Id : <" + getId() + ">\n";
         return out;
     }
     
@@ -71,20 +79,6 @@ public class Station {
     }
 
     /**
-     * @return the positionHtml
-     */
-    public int getPositionHtml() {
-        return positionHtml;
-    }
-
-    /**
-     * @param positionHtml the positionHtml to set
-     */
-    public void setPositionHtml(int positionHtml) {
-        this.positionHtml = positionHtml;
-    }
-
-    /**
      * @return the iga
      */
     public IGA getIga() {
@@ -110,5 +104,19 @@ public class Station {
      */
     public void setLieu(StationLieu lieu) {
         this.lieu = lieu;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 }

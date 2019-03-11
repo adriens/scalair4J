@@ -83,7 +83,7 @@ public class StationCrawler {
         StationLieu lieu;
         IGA iga;
         Station aStation;
-
+        
         ///////////////////////////////////////////////////////////////
         // Logicoop
         logger.info("Getting Station <" + StationLieu.LOGICOOP + "> status...");
@@ -98,6 +98,7 @@ public class StationCrawler {
         aStation.setLieu(lieu);
         aStation.setNom(Station.NOM_STATION_LOGICOOP);
         aStation.setTypologie(StationTypologie.INDUSTRIELLE);
+        aStation.setId(Station.ID_STATION_LOGICOOP);
         logger.info(aStation.toString());
         logger.info("Got <" + aStation.getNom() + ">.");
         this.stationsStatuses.put(Station.NOM_STATION_LOGICOOP, aStation);
@@ -117,6 +118,7 @@ public class StationCrawler {
         aStation.setLieu(lieu);
         aStation.setNom(Station.NOM_STATION_MONTRAVEL);
         aStation.setTypologie(StationTypologie.URBAINE_INDUSTRIELLE);
+        aStation.setId(Station.ID_STATION_MONTRAVEL);
         logger.info(aStation.toString());
         logger.info("Got <" + aStation.getNom() + ">.");
         this.stationsStatuses.put(Station.NOM_STATION_MONTRAVEL, aStation);
@@ -136,6 +138,7 @@ public class StationCrawler {
         aStation.setLieu(lieu);
         aStation.setNom(Station.NOM_STATION_FAUBOURG_BLANCHOT);
         aStation.setTypologie(StationTypologie.URBAINE);
+        aStation.setId(Station.ID_STATION_FAUBOURG_BLANCHOT);
         logger.info(aStation.toString());
         logger.info("Got <" + aStation.getNom() + ">.");
         this.stationsStatuses.put(Station.NOM_STATION_FAUBOURG_BLANCHOT, aStation);
@@ -154,6 +157,7 @@ public class StationCrawler {
         aStation.setLieu(lieu);
         aStation.setNom(Station.NOM_STATION_ANSE_VATA);
         aStation.setTypologie(StationTypologie.URBAINE);
+        aStation.setId(Station.ID_STATION_ANSE_VATA);
         logger.info(aStation.toString());
         logger.info("Got <" + aStation.getNom() + ">.");
         this.stationsStatuses.put(Station.NOM_STATION_ANSE_VATA, aStation);
@@ -172,6 +176,7 @@ public class StationCrawler {
         aStation.setLieu(lieu);
         aStation.setNom(Station.NOM_STATION_GENERAL);
         aStation.setTypologie(StationTypologie.URBAINE);
+        aStation.setId(Station.ID_STATION_GENERAL);
         logger.info(aStation.toString());
         logger.info("Got <" + aStation.getNom() + ">.");
         this.stationsStatuses.put(Station.NOM_STATION_GENERAL, aStation);
