@@ -18,6 +18,8 @@ public class Main {
             System.out.println(aStation);
             System.out.println("#########################################");
             
+            System.out.println(aStation.getShieldMessage());
+            
             System.exit(0);
         } catch (Exception ex) {
             ex.printStackTrace();

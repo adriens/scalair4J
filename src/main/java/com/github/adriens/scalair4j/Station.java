@@ -48,6 +48,14 @@ public class Station {
         return out;
     }
     
+    public ShieldMessage getShieldMessage(){
+        ShieldMessage out = new ShieldMessage();
+        out.setColor(getIga().getColor().toString().toLowerCase());
+        out.setLabel(getNom());
+        out.setMessage( getIga().getIndice() + " ("+ getIga().getMessage() + ")");
+        return out;
+    }
+    
     
     
     /**
