@@ -94,7 +94,7 @@ public class IQA {
     }
     
     public static void main(String[] args){
-        HashMap<Integer, IQA> out = IQA.getIGAs();
+        HashMap<Integer, IQA> out = IQA.getIQAs();
         System.out.println("Found <" + out.size() + "> IGAs");
     }
 }
