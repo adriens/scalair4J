@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/adriens/scalair4J.svg?branch=master)](https://travis-ci.org/adriens/scalair4J)
+[![](https://jitpack.io/v/adriens/scalair4J.svg)](https://jitpack.io/#adriens/scalair4J)
 
 # scalair4J
 
