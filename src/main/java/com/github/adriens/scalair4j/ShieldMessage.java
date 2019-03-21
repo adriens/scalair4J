@@ -11,7 +11,7 @@ package com.github.adriens.scalair4j;
  */
 public class ShieldMessage {
     
-    private int schemaversion = 1;
+    private int schemaVersion = 1;
     private String label;
     private String message;
     private String color;
@@ -19,7 +19,7 @@ public class ShieldMessage {
 
     public String toString(){
         String out = "";
-        out += "schemaversion : <" + getSchemaversion() + ">\n";
+        out += "schemaversion : <" + getSchemaVersion() + ">\n";
         out += "label : <" + getLabel() + ">\n";
         out += "message : <" + getMessage() + ">\n";
         out += "color : <" + getColor() + ">\n";
@@ -28,15 +28,15 @@ public class ShieldMessage {
     /**
      * @return the schemaversion
      */
-    public int getSchemaversion() {
-        return schemaversion;
+    public int getSchemaVersion() {
+        return schemaVersion;
     }
 
     /**
      * @param schemaversion the schemaversion to set
      */
-    public void setSchemaversion(int schemaversion) {
-        this.schemaversion = schemaversion;
+    public void setSchemaVersion(int schemaversion) {
+        this.schemaVersion = schemaVersion;
     }
 
     /**
