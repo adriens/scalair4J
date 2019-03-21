@@ -5,6 +5,8 @@
  */
 package com.github.adriens.scalair4j;
 
+import java.util.HashMap;
+
 /**
  *
  * @author salad74
@@ -79,5 +81,18 @@ public class IGA {
      */
     public void setIndice(int indice) {
         this.indice = indice;
+    }
+    
+    public static final HashMap<Integer, IGA> getIGAs(){
+        HashMap<Integer, IGA> out = new HashMap<Integer, IGA>();
+        for(int i=1; i<=MESSAGES.length; i++){
+              out.put(new Integer(i), new IGA(i));
+         }
+        return out;
+    }
+    
+    public static void main(String[] args){
+        HashMap<Integer, IGA> out = IGA.getIGAs();
+        System.out.println("Found <" + out.size() + "> IGAs");
     }
 }
