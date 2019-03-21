@@ -52,13 +52,13 @@ public class IGA {
     }
     
     public IGAColor getColor(){
-        if(getIndice() < 4){
+        if(getIndice() <= 4){
             return IGAColor.GREEN;
         }
-        else if ( (getIndice() >= 4) && (getIndice() <= 6)){
+        else if ( (getIndice() >= 5) && (getIndice() <= 7)){
             return IGAColor.YELLOW;
         }
-        else if (getIndice() >= 7) {
+        else if (getIndice() > 7) {
             return IGAColor.RED;
         }
         else {
@@ -67,7 +67,7 @@ public class IGA {
     }
     public String getMessage(){
         String out = "";
-        return IGA.MESSAGES[getIndice()];
+        return IGA.MESSAGES[getIndice()-1];
     }
     /**
      * @return the indice
