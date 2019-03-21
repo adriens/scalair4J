@@ -83,7 +83,7 @@ public class IQA {
         this.indice = indice;
     }
     
-    public static final HashMap<Integer, IQA> getIGAs(){
+    public static final HashMap<Integer, IQA> getIQAs(){
         HashMap<Integer, IQA> out = new HashMap<Integer, IQA>();
         for(int i=0; i<MESSAGES.length; i++){
             IQA aIGA = new IQA(i+1);
