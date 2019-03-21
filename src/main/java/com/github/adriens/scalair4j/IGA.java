@@ -86,7 +86,7 @@ public class IGA {
     public static final HashMap<Integer, IGA> getIGAs(){
         HashMap<Integer, IGA> out = new HashMap<Integer, IGA>();
         for(int i=0; i<MESSAGES.length; i++){
-            IGA aIGA = new IGA(i);
+            IGA aIGA = new IGA(i+1);
               out.put(new Integer(i),aIGA );
               System.out.println(aIGA);
          }
