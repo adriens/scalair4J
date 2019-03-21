@@ -48,17 +48,17 @@ public class IGA {
         
     }
     public String toString(){
-        return getIndice() + "";
+        return getIndice() + "/" + getColor();
     }
     
     public IGAColor getColor(){
-        if(getIndice() <= 4){
+        if(getIndice() < 4){
             return IGAColor.GREEN;
         }
-        else if ( (getIndice() > 4) && (getIndice() <= 7)){
+        else if ( (getIndice() >= 4) && (getIndice() <= 6)){
             return IGAColor.YELLOW;
         }
-        else if (getIndice() >= 8) {
+        else if (getIndice() >= 7) {
             return IGAColor.RED;
         }
         else {
@@ -85,8 +85,10 @@ public class IGA {
     
     public static final HashMap<Integer, IGA> getIGAs(){
         HashMap<Integer, IGA> out = new HashMap<Integer, IGA>();
-        for(int i=1; i<=MESSAGES.length; i++){
-              out.put(new Integer(i), new IGA(i));
+        for(int i=0; i<MESSAGES.length; i++){
+            IGA aIGA = new IGA(i);
+              out.put(new Integer(i),aIGA );
+              System.out.println(aIGA);
          }
         return out;
     }
