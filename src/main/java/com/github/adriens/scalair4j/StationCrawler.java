@@ -81,7 +81,7 @@ public class StationCrawler {
         String stationStatus;
         int indiceIGA;
         StationLieu lieu;
-        IGA iga;
+        IQA iga;
         Station aStation;
         
         ///////////////////////////////////////////////////////////////
@@ -92,7 +92,7 @@ public class StationCrawler {
         indiceIGA = Integer.parseInt(StringUtils.trim(stationStatus));
         lieu = StationLieu.LOGICOOP;
         // build IGA
-        iga = new IGA(indiceIGA);
+        iga = new IQA(indiceIGA);
         aStation = new Station();
         aStation.setIga(iga);
         aStation.setLieu(lieu);
@@ -112,7 +112,7 @@ public class StationCrawler {
         indiceIGA = Integer.parseInt(StringUtils.trim(stationStatus));
         lieu = StationLieu.MONTRAVEL;
         // build IGA
-        iga = new IGA(indiceIGA);
+        iga = new IQA(indiceIGA);
         aStation = new Station();
         aStation.setIga(iga);
         aStation.setLieu(lieu);
@@ -132,7 +132,7 @@ public class StationCrawler {
         indiceIGA = Integer.parseInt(StringUtils.trim(stationStatus));
         lieu = StationLieu.FAUBOURG_BLANCHOT;
         // build IGA
-        iga = new IGA(indiceIGA);
+        iga = new IQA(indiceIGA);
         aStation = new Station();
         aStation.setIga(iga);
         aStation.setLieu(lieu);
@@ -151,7 +151,7 @@ public class StationCrawler {
         indiceIGA = Integer.parseInt(StringUtils.trim(stationStatus));
         lieu = StationLieu.ANSE_VATA;
         // build IGA
-        iga = new IGA(indiceIGA);
+        iga = new IQA(indiceIGA);
         aStation = new Station();
         aStation.setIga(iga);
         aStation.setLieu(lieu);
@@ -170,7 +170,7 @@ public class StationCrawler {
         indiceIGA = Integer.parseInt(StringUtils.trim(stationStatus));
         lieu = StationLieu.GENERAL;
         // build IGA
-        iga = new IGA(indiceIGA);
+        iga = new IQA(indiceIGA);
         aStation = new Station();
         aStation.setIga(iga);
         aStation.setLieu(lieu);

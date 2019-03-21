@@ -9,7 +9,7 @@ package com.github.adriens.scalair4j;
  *
  * @author salad74
  */
-public enum IGAColor {
+public enum IQAColor {
     GREEN,
     YELLOW,
     RED,

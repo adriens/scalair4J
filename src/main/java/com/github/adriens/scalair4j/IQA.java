@@ -11,11 +11,11 @@ import java.util.HashMap;
  *
  * @author salad74
  */
-public class IGA {
+public class IQA {
 
     private int indice;
     private String message;
-    private IGAColor color;
+    private IQAColor color;
     
     public final static String MESSAGE_INDICE_1 = "Très bon";
     public final static String MESSAGE_INDICE_2 = "Très bon";
@@ -39,11 +39,11 @@ public class IGA {
                                                 MESSAGE_INDICE_10
                                                 };
     
-    public IGA() {
+    public IQA() {
 
     }
 
-    public IGA(int anIndice) {
+    public IQA(int anIndice) {
         setIndice(anIndice);
         
     }
@@ -51,23 +51,23 @@ public class IGA {
         return getIndice() + "/" + getColor() + " (" + getMessage() + ")";
     }
     
-    public IGAColor getColor(){
+    public IQAColor getColor(){
         if(getIndice() <= 4){
-            return IGAColor.GREEN;
+            return IQAColor.GREEN;
         }
         else if ( (getIndice() >= 5) && (getIndice() <= 7)){
-            return IGAColor.YELLOW;
+            return IQAColor.YELLOW;
         }
         else if (getIndice() > 7) {
-            return IGAColor.RED;
+            return IQAColor.RED;
         }
         else {
-            return IGAColor.UNKNOWN;
+            return IQAColor.UNKNOWN;
         }
     }
     public String getMessage(){
         String out = "";
-        return IGA.MESSAGES[getIndice()-1];
+        return IQA.MESSAGES[getIndice()-1];
     }
     /**
      * @return the indice
@@ -83,10 +83,10 @@ public class IGA {
         this.indice = indice;
     }
     
-    public static final HashMap<Integer, IGA> getIGAs(){
-        HashMap<Integer, IGA> out = new HashMap<Integer, IGA>();
+    public static final HashMap<Integer, IQA> getIGAs(){
+        HashMap<Integer, IQA> out = new HashMap<Integer, IQA>();
         for(int i=0; i<MESSAGES.length; i++){
-            IGA aIGA = new IGA(i+1);
+            IQA aIGA = new IQA(i+1);
               out.put(new Integer(i),aIGA );
               System.out.println(aIGA);
          }
@@ -94,7 +94,7 @@ public class IGA {
     }
     
     public static void main(String[] args){
-        HashMap<Integer, IGA> out = IGA.getIGAs();
+        HashMap<Integer, IQA> out = IQA.getIGAs();
         System.out.println("Found <" + out.size() + "> IGAs");
     }
 }

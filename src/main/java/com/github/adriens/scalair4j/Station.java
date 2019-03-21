@@ -14,7 +14,7 @@ public class Station {
     private StationLieu lieu;
     
     private String nom;
-    private IGA iga;
+    private IQA iga;
     
     private int id;
     
@@ -89,14 +89,14 @@ public class Station {
     /**
      * @return the iga
      */
-    public IGA getIga() {
+    public IQA getIga() {
         return iga;
     }
 
     /**
      * @param iga the iga to set
      */
-    public void setIga(IGA iga) {
+    public void setIga(IQA iga) {
         this.iga = iga;
     }
 
