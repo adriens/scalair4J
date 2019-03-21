@@ -48,7 +48,7 @@ public class IGA {
         
     }
     public String toString(){
-        return getIndice() + "/" + getColor();
+        return getIndice() + "/" + getColor() + " (" + getMessage() + ")";
     }
     
     public IGAColor getColor(){
