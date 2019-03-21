@@ -52,7 +52,7 @@ public class Station {
         ShieldMessage out = new ShieldMessage();
         out.setColor(getIga().getColor().toString().toLowerCase());
         out.setLabel(getNom());
-        out.setMessage( getIga().getIndice() + " ("+ getIga().getMessage() + ")");
+        out.setMessage("IQA : " + getIga().getIndice() + " | "+ getIga().getMessage());
         return out;
     }
     
