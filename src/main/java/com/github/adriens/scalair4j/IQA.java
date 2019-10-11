@@ -17,6 +17,7 @@ public class IQA {
     private String message;
     private IQAColor color;
     
+    public final static String MESSAGE_INDICE_0 = "Très bon";
     public final static String MESSAGE_INDICE_1 = "Très bon";
     public final static String MESSAGE_INDICE_2 = "Très bon";
     public final static String MESSAGE_INDICE_3 = "Bon";
@@ -27,7 +28,8 @@ public class IQA {
     public final static String MESSAGE_INDICE_8 = "Mauvais";
     public final static String MESSAGE_INDICE_9 = "Mauvais";
     public final static String MESSAGE_INDICE_10 = "Très mauvais";
-    public final static String[] MESSAGES = {MESSAGE_INDICE_1,
+    public final static String[] MESSAGES = {MESSAGE_INDICE_0,
+                                                MESSAGE_INDICE_1,
                                                 MESSAGE_INDICE_2,
                                                 MESSAGE_INDICE_3,
                                                 MESSAGE_INDICE_4,
@@ -67,7 +69,7 @@ public class IQA {
     }
     public String getMessage(){
         String out = "";
-        return IQA.MESSAGES[getIndice()-1];
+        return IQA.MESSAGES[getIndice()];
     }
     /**
      * @return the indice
@@ -85,8 +87,10 @@ public class IQA {
     
     public static final HashMap<Integer, IQA> getIQAs(){
         HashMap<Integer, IQA> out = new HashMap<Integer, IQA>();
+        
+              
         for(int i=0; i<MESSAGES.length; i++){
-            IQA aIGA = new IQA(i+1);
+            IQA aIGA = new IQA(i);
               out.put(new Integer(i),aIGA );
               System.out.println(aIGA);
          }
